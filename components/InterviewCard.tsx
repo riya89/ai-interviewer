@@ -5,7 +5,7 @@ import { getRandomInterviewCover } from '@/lib/utils';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import DisplayTechIcons from './DisplayTechIcons';
-const InterviewCard = ({ interviewId, userId, role, type, techstack, createdAt}: InterviewCardProps) => {
+const InterviewCard = ({ id, userId, role, type, techstack, createdAt}: InterviewCardProps) => {
     const feedback = null as Feedback | null;
     //technical
 
@@ -43,8 +43,8 @@ const InterviewCard = ({ interviewId, userId, role, type, techstack, createdAt}:
                 <DisplayTechIcons techStack={techstack} />
                 <Button className='btn-primary'>
                     <Link href={feedback
-                        ? `/interview/${interviewId}/feedback`
-                        : `/interview/${interviewId}`
+                        ? `/interview/${id}/feedback`
+                        : `/interview/${id}`
                     }>
                         {feedback ? 'Check Feedback' : 'View Interview'}
                     </Link>

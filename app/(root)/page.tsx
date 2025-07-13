@@ -4,7 +4,8 @@ import React, { use } from 'react'
 import Image from 'next/image'
 import { dummyInterviews } from '@/constants'
 import InterviewCard from '@/components/InterviewCard'
-import { getCurrentUser, getInterviewsByUserId, getLatestInterviews } from '@/lib/actions/auth.action'
+import { getCurrentUser } from '@/lib/actions/auth.action'
+import { getInterviewsByUserId, getLatestInterviews } from '@/lib/actions/general.action'
 const Page = async () => {
   const user = await getCurrentUser();
   const [userInterviews, latestInterviews] = await Promise.all([
