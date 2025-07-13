@@ -2,7 +2,8 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import React, { use } from 'react'
 import Image from 'next/image'
-import { dummyInterviews } from '@/constants'
+import { signOut } from '@/lib/actions/auth.action'
+import { LogOut } from 'lucide-react' 
 import InterviewCard from '@/components/InterviewCard'
 import { getCurrentUser } from '@/lib/actions/auth.action'
 import { getInterviewsByUserId, getLatestInterviews } from '@/lib/actions/general.action'
@@ -18,6 +19,16 @@ const Page = async () => {
   return (
     <>
     <section className='card-cta'>
+      <form action={signOut} className="absolute top-4 right-4">
+        <button
+  type="submit"
+  title="Sign Out"
+  className="flex items-center gap-2 hover:opacity-80"
+>
+  Log Out
+  <LogOut className="w-5 h-5 text-gray-200" />
+</button>
+      </form>
       <div className='flex flex-col gap-6 max-w-lg'>
         <h2>Get Interview ready with AI-Powered practice and feedback</h2>
       <p className='text-lg'>

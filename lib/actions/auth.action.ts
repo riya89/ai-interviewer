@@ -154,3 +154,8 @@ export async function getLatestInterviews(
     ...doc.data(),
   })) as Interview[];
 }
+export async function signOut() {
+  const cookieStore = await cookies();
+
+  cookieStore.delete("session");
+}

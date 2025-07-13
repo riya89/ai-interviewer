@@ -103,7 +103,7 @@ const AuthForm = ({ type}: { type: FormType}) => {
           <Image src="/logo.svg" alt="logo" height={32} width={38} />
           <h2 className="text-primary-100">PrepWise</h2>
         </div>
-        <h3>Practice Job Interviews with AI</h3>
+        <h3 className="text-center">Practice Job Interviews with AI</h3>
 
       
       <Form {...form}>
