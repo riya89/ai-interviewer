@@ -5,9 +5,7 @@
 I enjoy building projects with **React, TypeScript, Python, and AI frameworks**, focusing on how agents can be applied for real-world problem solving. 
 
 
-# Project Title
-
-🚀 AI Interviewer
+# 🚀 AI Interviewer
 
 AI Interviewer is a mock interview simulator powered by AI Agents (via Vapi-AI and Gemini API).
 It allows users to create customizable interviews based on skills, job role, number of questions etc. An AI agent then conducts the interview in real-time, giving the user a real interview-like experience.
