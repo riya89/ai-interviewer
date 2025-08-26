@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Hi, I'm Riya 👋
 
-First, run the development server:
+💻 Software Engineer | 🚀 Enthusiastic about Agentic AI  
+I enjoy building projects with **React, TypeScript, Python, and AI frameworks**, focusing on how agents can be applied for real-world problem solving. 
+
+
+# Project Title
+
+🚀 AI Interviewer
+
+AI Interviewer is a mock interview simulator powered by AI Agents (via Vapi-AI and Gemini API).
+It allows users to create customizable interviews based on skills, job role, number of questions etc. An AI agent then conducts the interview in real-time, giving the user a real interview-like experience.
+
+After the session, the system generates detailed feedback on performance, helping candidates improve and prepare for real-world interviews.
+
+🔗 Live App: https://ai-interviewer-9z2hx2c2a-riya89s-projects.vercel.app/sign-in
+
+
+
+## Features
+
+- 📝 Customizable Interviews:
+    Choose skills, role, difficulty, number of questions to tailor your interview preparation.
+
+- 🤖 AI-Powered Interviewer:
+    Uses Vapi-AI agents and Google Gemini API to simulate conversations like a real interviewer.
+
+- 📊 Performance Feedback:
+    Get AI-generated, structured feedback on answers, confidence, and areas for improvement.
+    Review past interviews to track progress over time.
+
+- 🔄 Retake Interviews Anytime:
+    Revisit and retake customized interview scenarios as many times as needed.
+
+- 🔐 User Authentication:
+    Secure login with Firebase Authentication, saving personalized interview history.
+
+
+
+## Tech Stack
+
+**Client:** Next.js (TypeScript), React, Tailwind CSS
+
+**Server:** Vapi-AI (AI Interview Agent), Google Gemini (LLM API), Flask (backend services)
+
+**Deployment:** Vercel
+
+
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/riya89/ai-interviewer.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd ai-interviewer
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Start the server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project, you will need to add the following environment variables to your .env file
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`NEXT_PUBLIC_FIREBASE_API_KEY`=your_firebase_key
+
+`NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN`=your_firebase_auth_domain
+
+`GEMINI_API_KEY`=your_gemini_key
+
+`VAPI_API_KEY`=your_vapi_key
